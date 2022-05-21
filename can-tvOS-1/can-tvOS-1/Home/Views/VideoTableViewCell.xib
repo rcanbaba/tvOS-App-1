@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="19455" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" misplaced="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoTableViewCellID" id="fBs-An-CcD" customClass="VideoTableViewCell" customModule="can_tvOS_1" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="1952" height="540"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fBs-An-CcD" id="S0Q-fX-qc8">
+                <rect key="frame" x="0.0" y="0.0" width="1952" height="540"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYA-1x-s5t">
+                        <rect key="frame" x="20" y="20" width="1912" height="91"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Mnx-Nd-NWn">
+                        <rect key="frame" x="40" y="119" width="1884" height="391"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="391" id="cYd-qL-dHA"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7KU-D3-WB8">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="tYA-1x-s5t" firstAttribute="top" secondItem="S0Q-fX-qc8" secondAttribute="top" constant="20" id="9k0-fh-SLF"/>
+                    <constraint firstItem="Mnx-Nd-NWn" firstAttribute="leading" secondItem="S0Q-fX-qc8" secondAttribute="leadingMargin" constant="20" id="IIF-gN-FDK"/>
+                    <constraint firstItem="Mnx-Nd-NWn" firstAttribute="top" secondItem="tYA-1x-s5t" secondAttribute="bottom" constant="8" id="WHk-ok-C2z"/>
+                    <constraint firstAttribute="trailing" secondItem="tYA-1x-s5t" secondAttribute="trailing" constant="20" id="aBD-SA-uzr"/>
+                    <constraint firstItem="tYA-1x-s5t" firstAttribute="leading" secondItem="S0Q-fX-qc8" secondAttribute="leading" constant="20" id="bcH-Qe-W49"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Mnx-Nd-NWn" secondAttribute="trailing" constant="20" id="luo-hX-NgR"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Mnx-Nd-NWn" secondAttribute="bottom" constant="20" id="wqK-hK-3zX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="1ks-Xo-ai1"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="titleLabel" destination="tYA-1x-s5t" id="FUo-oi-BHm"/>
+                <outlet property="videoCollectionView" destination="Mnx-Nd-NWn" id="K0d-YF-X5L"/>
+                <outlet property="videoCollectionViewHeightConstraint" destination="cYd-qL-dHA" id="rqL-nb-4cc"/>
+            </connections>
+            <point key="canvasLocation" x="185" y="33"/>
+        </tableViewCell>
+    </objects>
+</document>
