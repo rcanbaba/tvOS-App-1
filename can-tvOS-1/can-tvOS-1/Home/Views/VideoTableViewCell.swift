@@ -20,8 +20,8 @@ class VideoTableViewCell: UITableViewCell {
     weak var delegate: VideoTableViewCellDelegate?
     var type: CellType = .latestVideos
     
-    var latestVideos = ["debugging","lazyView","appleSignIn","inheritance","copyOnWrite","methodDispatch"]
-    var carousalVideos = ["tvOS_development","iCode_Banner_Small"]
+    var latestVideos = ["repo1","repo2","repo3","repo4","repo5","repo6"]
+    var carousalVideos = ["tvOS_development","tvOS-limitations"]
     var classifiedVideos = ["Interviews", "Swift UI", "Core Concepts", "DSA"]
     var toolsVideos = ["simsim","instruments","pusher"]
     

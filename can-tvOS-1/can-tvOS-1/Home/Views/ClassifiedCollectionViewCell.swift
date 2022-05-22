@@ -21,6 +21,18 @@ class ClassifiedCollectionViewCell: UICollectionViewCell {
         containerView.layer.borderColor = UIColor.clear.cgColor
     }
     
+    override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
+        if context.nextFocusedView == self {
+            containerView.layer.borderColor = UIColor.white.cgColor
+            containerView.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
+            titleLabel.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
+        } else {
+            containerView.layer.borderColor = UIColor.clear.cgColor
+            containerView.transform = CGAffineTransform(scaleX: 1, y: 1)
+            titleLabel.transform = CGAffineTransform(scaleX: 1, y: 1)
+        }
+    }
+    
     func configureView(text: String) {
         containerView.backgroundColor = UIColor.random
         titleLabel.text = text
