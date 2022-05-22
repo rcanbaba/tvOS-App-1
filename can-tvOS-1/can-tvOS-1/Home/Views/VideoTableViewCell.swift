@@ -44,7 +44,7 @@ class VideoTableViewCell: UITableViewCell {
 
 }
 
-extension VideoTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource {
+extension VideoTableViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch type {
         case .carousal:
