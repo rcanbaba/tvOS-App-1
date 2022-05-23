@@ -22,6 +22,7 @@
 		B4B0FA652838FC3400F79944 /* ClassifiedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4B0FA632838FC3400F79944 /* ClassifiedCollectionViewCell.xib */; };
 		B4B0FA682838FC4900F79944 /* ToolsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B0FA662838FC4900F79944 /* ToolsCollectionViewCell.swift */; };
 		B4B0FA692838FC4900F79944 /* ToolsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4B0FA672838FC4900F79944 /* ToolsCollectionViewCell.xib */; };
+		B4CBA7EF283B93700031CA52 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CBA7ED283B884F0031CA52 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		B4B0FA632838FC3400F79944 /* ClassifiedCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClassifiedCollectionViewCell.xib; sourceTree = "<group>"; };
 		B4B0FA662838FC4900F79944 /* ToolsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsCollectionViewCell.swift; sourceTree = "<group>"; };
 		B4B0FA672838FC4900F79944 /* ToolsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToolsCollectionViewCell.xib; sourceTree = "<group>"; };
+		B4CBA7ED283B884F0031CA52 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 		B4B0FA522838F7A800F79944 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				B4CBA7ED283B884F0031CA52 /* DetailViewController.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4CBA7EF283B93700031CA52 /* DetailViewController.swift in Sources */,
 				B4B0FA682838FC4900F79944 /* ToolsCollectionViewCell.swift in Sources */,
 				B4B0FA602838FC1B00F79944 /* VideoCollectionViewCell.swift in Sources */,
 				B4B0FA562838F7D200F79944 /* SearchViewController.swift in Sources */,
