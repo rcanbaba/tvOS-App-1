@@ -124,6 +124,9 @@
                                                                     <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
                                                                     <state key="normal" title="Button"/>
                                                                     <buttonConfiguration key="configuration" style="gray" title="Play"/>
+                                                                    <connections>
+                                                                        <action selector="didClickOnPlayButton:" destination="VS0-bs-NuU" eventType="primaryActionTriggered" id="mNa-6w-EUz"/>
+                                                                    </connections>
                                                                 </button>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5lb-Vr-0cK">
                                                                     <rect key="frame" x="377" y="0.0" width="357" height="86"/>
