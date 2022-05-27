@@ -25,4 +25,10 @@ app icon components:
   - Small: 400px x 240px
 - Launch Image: 1920px x 1080px
 - Top Shelf Images: if user place the app top shelf menu
-...
+
+---
+
+Using UISearchController on tvOS creates problems,
+- handling keyboard
+- not flexible, not scalable
+- customization (w-h,icons)
